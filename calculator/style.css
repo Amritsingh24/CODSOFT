@@ -1,0 +1,49 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'popins', sans-serif;
+    box-sizing: border-box;
+}
+
+.container{
+    width: 100%;
+    height: 100vh;
+    background: #16b4af;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.calculator{
+    background: #3a4452;
+    padding: 20px;
+    border-radius: 10px;
+}
+.calculator .buttons button {
+    border: 0;
+    outline: 0;
+    width: 60px;
+    height: 60px;
+    border-radius: 10px;
+    box-shadow: -7px -7px 15px rgba(255,255,255,0.1), 5px 5px 15px rgba(0, 0, 0, 0.3);
+    background: transparent;
+    font-size: 20px;
+    color: #fff;
+    cursor: pointer;
+    margin: 10px;
+}
+
+.calculator .display input {
+    border: 0;
+    outline: 0;
+    width: calc(4 * 60px + 5 * 10px); /* Adjusted for the width of buttons and margins */
+    height: 60px;
+    border-radius: 10px;
+    box-shadow: -7px -7px 15px rgba(255,255,255,0.1), 5px 5px 15px rgba(0, 0, 0, 0.3);
+    background: #333; /* Background color for display */
+    font-size: 30px; /* Larger font size for the display */
+    color: #fff;
+    text-align: right; /* Align text to the right */
+    padding: 10px; /* Add padding for better display appearance */
+    margin-bottom: 10px; /* Space between display and buttons */
+}
